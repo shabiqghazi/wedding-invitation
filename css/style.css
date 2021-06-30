@@ -1,0 +1,94 @@
+*{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14pt;
+}
+html{
+	scroll-behavior: smooth;
+}
+#cover{
+	transition: 1s;
+}
+.font1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 45pt;
+	font-weight: 400;
+}
+.font2{
+	font-family: 'Dancing Script', cursive;
+	font-size: 30pt;
+	font-weight: 400;	
+}
+.stick{
+	position: fixed;
+	width: 100vw;
+	top: 0px;
+	transition: 0.5s;
+	height: 90px;
+	z-index: 1;
+}
+.height-full{
+	height: 100vh;
+}
+#cont-home{
+	background-image: url('../assets/main.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: -1;
+}
+#cont-d1{
+	background-color: #ECF3FB;
+}
+#cont-d2{
+	background-color: #D7E6F7;
+}
+#cont-d3{
+	background-color: #C5D8EE;
+}
+.bg-abu{
+	background-color: #7F91B2;
+}
+.map-embed{
+	width: 90vw;
+}
+.fas{
+	font-size: 16pt;
+}
+.audio-control{
+	color: #fff;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	background-color: #7F91B2;
+	right: 0;
+	top: 20vh;
+	z-index: 2;
+}
+.img-leaf{
+	width: 250px;
+}
+.text-waktu{
+	font-size: 12pt;
+}
+.dynamic-image:: hover{
+}
+
+@media only screen and (max-width: 425px){
+	*{
+		font-size: 1.02em;
+	}
+	.img-leaf{
+		width: 150px;
+	}
+}
+@media only screen and (max-width: 425px){
+	*{
+		font-size: 1.0em;
+	}
+	.font1{
+		font-size: 30pt;
+	}
+	.img-leaf{
+		width: 150px;
+	}
+}
