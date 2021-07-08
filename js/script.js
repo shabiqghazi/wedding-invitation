@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jul 11, 2021 11:00:00").getTime();
+var countDownDate = new Date("Jul 11, 2021 08:00:00").getTime();
 
 var myfunc = setInterval(function() {
 	var now = new Date().getTime();
@@ -16,11 +16,14 @@ var myfunc = setInterval(function() {
 
 	if (timeleft < 0) {
 	    clearInterval(myfunc);
-	    document.getElementById("days").innerHTML = ""
-	    document.getElementById("hours").innerHTML = "" 
-	    document.getElementById("mins").innerHTML = ""
-	    document.getElementById("secs").innerHTML = ""
-	    document.getElementById("end").innerHTML = "TIME UP!!";
+	    $('#end').addClass('bg-abu');
+	    $('#end-container').removeClass('col-12');
+	    $('#end-container').addClass('col-8');
+	    $('#end').addClass('p-3');
+	    $('#end').html('');
+	    $('#end').html(`
+	    	<h5 class="align-middle">Acara sedang berlangsung!</h5>
+    	`);
 	}
 }, 1000)
 
@@ -40,10 +43,6 @@ $(window).scroll(function(){
 
 var audio = document.getElementById("backsound");
 
-$(window).ready(function(){
-		audio.play();
-})
-
 $('.audio-control').on('click', function(){
   if(audio.paused){
     audio.play();
@@ -51,3 +50,9 @@ $('.audio-control').on('click', function(){
     audio.pause();
   }
 });
+
+$('#btn-open').click(function(){
+	$('*').css('overflow','visible');
+	$('#cover').css('top','-100vh');
+	audio.play();
+})

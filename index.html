@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<div class="wedding-invitation" id="wedding-invitation">
-			<audio id="backsound" autoplay="" loop="">
+			<audio id="backsound" loop="">
 				<source src="assets/bensound-memories.mp3">
 			</audio>
 			<div class="audio-control played rounded-circle justify-content-center d-flex">
@@ -51,8 +51,8 @@
 							<p data-aos="fade-up" data-aos-duration="2000">GOR Desa Rajapolah</p>
 							<p data-aos="fade-up" data-aos-duration="2000">Kab. Tasikmalaya</p>
 						</div>
-						<div class="col-12 mt-4 mt-lg-3">
-							<div class="row justify-content-center">
+						<div class="col-12 mt-4 mt-lg-3" id="end-container">
+							<div class="row justify-content-center rounded-lg align-middle" id="end">
 								<h4 class="my-3" data-aos="fade-up" data-aos-duration="2000">Menuju Hari Pernikahan</h4>
 								<div class="col-lg-10 d-flex justify-content-center">
 									<div class="card p-0 mr-1 bg-abu" style="width:70px;" data-aos="fade-up" data-aos-duration="2200">
@@ -213,7 +213,17 @@
 			<a class="small d-block text-white" href='https://www.freepik.com/free-photos-vectors/background'>Background vector created by rawpixel.com - www.freepik.com</a>
 			<span class="small">White Petals by Keys of Moon | https://soundcloud.com/keysofmoon Attribution 4.0 International (CC BY 4.0) https://creativecommons.org/licenses/by/4.0/ Music promoted by https://www.chosic.com/</span>
 		</footer>
-		<div class="bg-abu">
+		<div class="bg-abu p-0 m-0 d-flex align-items-center" style="height:100vh;width:100vw;position:absolute;top:0;z-index:9;" id="cover">
+			<div class="container p-0">
+				<div class="row m-0">
+					<div class="col-12 m-3">
+						<h2 class="font1 text-white text-center">Selamat Datang</h2>
+					</div>
+					<div class="col-12 d-flex justify-content-center">
+						<button id="btn-open" class="btn btn-primary rounded-pill">Buka Undangan</button>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- Optional JavaScript; choose one of the two! -->
 
