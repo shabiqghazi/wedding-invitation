@@ -1,3 +1,7 @@
+$(window).on('load',function(){
+	document.location.href = '#home';
+})
+
 var countDownDate = new Date("Jul 11, 2021 08:00:00").getTime();
 
 var myfunc = setInterval(function() {
