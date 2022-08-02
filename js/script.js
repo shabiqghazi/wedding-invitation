@@ -2,7 +2,7 @@ $(window).on("load", function () {
   document.location.href = "#home";
 });
 
-var countDownDate = new Date("Aug 30, 2021 08:00:00").getTime();
+var countDownDate = new Date("Aug 30, 2022 08:00:00").getTime();
 
 var myfunc = setInterval(function () {
   var now = new Date().getTime();
